@@ -5,21 +5,21 @@
 class Shannon < Formula
   desc "Advanced search and analysis tool for Claude conversation exports"
   homepage "https://github.com/neilberkman/shannon"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/neilberkman/shannon/releases/download/v0.2.3/shannon_0.2.3_darwin_amd64.tar.gz"
-      sha256 "85c4f55b9da500fd6184f649b5e8b72f45ea27a1c52b59069549a2e8716c9423"
+      url "https://github.com/neilberkman/shannon/releases/download/v0.2.4/shannon_0.2.4_darwin_amd64.tar.gz"
+      sha256 "4862dec5be52488360b12cd1c6235ce1e69bf47f923e3b2518a3bf40fb0313ab"
 
       def install
         bin.install "shannon"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/neilberkman/shannon/releases/download/v0.2.3/shannon_0.2.3_darwin_arm64.tar.gz"
-      sha256 "2257b81e35c73d20e34b630831eb312f5f8f16e439b7e205522cab09bd5a7b88"
+      url "https://github.com/neilberkman/shannon/releases/download/v0.2.4/shannon_0.2.4_darwin_arm64.tar.gz"
+      sha256 "da25f41ddc6f8a49a5d03ce4466cc50cd7b9188cecc2d5469c7b89c6a113a0c2"
 
       def install
         bin.install "shannon"
@@ -29,15 +29,15 @@ class Shannon < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/neilberkman/shannon/releases/download/v0.2.3/shannon_0.2.3_linux_amd64.tar.gz"
-      sha256 "292fdd6c77d88b0abb8f405b642aa71c4dfc32765b3fdb126a3a63b3dc33c215"
+      url "https://github.com/neilberkman/shannon/releases/download/v0.2.4/shannon_0.2.4_linux_amd64.tar.gz"
+      sha256 "ed9247b96f37d17283008f5053d2f4e50496038ccfc844086f50aebdbc09b503"
       def install
         bin.install "shannon"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/neilberkman/shannon/releases/download/v0.2.3/shannon_0.2.3_linux_arm64.tar.gz"
-      sha256 "3c26f586dfb8ca57b1d8fabd2712811d4ff5b474f64301298efb6ad75b2ed17a"
+      url "https://github.com/neilberkman/shannon/releases/download/v0.2.4/shannon_0.2.4_linux_arm64.tar.gz"
+      sha256 "ce2f49e8b1b29adf6f0819184d43b1917d323d3737d90e389ab579dc467d3624"
       def install
         bin.install "shannon"
       end
