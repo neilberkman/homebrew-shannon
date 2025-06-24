@@ -5,21 +5,21 @@
 class Shannon < Formula
   desc "Advanced search and analysis tool for Claude conversation exports"
   homepage "https://github.com/neilberkman/shannon"
-  version "0.2.7"
+  version "0.2.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/neilberkman/shannon/releases/download/v0.2.7/shannon_0.2.7_darwin_amd64.tar.gz"
-      sha256 "5b725cb7a0c705623865e804651e3c58926ad3b3815a301c78f177b2dff75984"
+      url "https://github.com/neilberkman/shannon/releases/download/v0.2.8/shannon_0.2.8_darwin_amd64.tar.gz"
+      sha256 "56c93b4e5d802d18253683e0ca47c48a115df2023adbff752bc86dab68571e1c"
 
       def install
         bin.install "shannon"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/neilberkman/shannon/releases/download/v0.2.7/shannon_0.2.7_darwin_arm64.tar.gz"
-      sha256 "0b7d165ec87da53136ce3d7c12dfe962fe7b2fdceceffede2fb2fc6fe011d6be"
+      url "https://github.com/neilberkman/shannon/releases/download/v0.2.8/shannon_0.2.8_darwin_arm64.tar.gz"
+      sha256 "c2732927c8bce2c44eb6e6fd7f741f99513f0950606b87fd354b2796feb65615"
 
       def install
         bin.install "shannon"
@@ -29,15 +29,15 @@ class Shannon < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/neilberkman/shannon/releases/download/v0.2.7/shannon_0.2.7_linux_amd64.tar.gz"
-      sha256 "c91016d35af48205e5c27933001f7a49cd409e45aaa8cc5a06707fe7f15e91b9"
+      url "https://github.com/neilberkman/shannon/releases/download/v0.2.8/shannon_0.2.8_linux_amd64.tar.gz"
+      sha256 "51fec49959a97e53b21e0c0505c29e1c65c75d9b5f8891daf5b26de0150991b6"
       def install
         bin.install "shannon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/neilberkman/shannon/releases/download/v0.2.7/shannon_0.2.7_linux_arm64.tar.gz"
-      sha256 "2275b67492c70ccd6ec02df174314181d13eb667a9ba433620c6fc3742ed0d4e"
+      url "https://github.com/neilberkman/shannon/releases/download/v0.2.8/shannon_0.2.8_linux_arm64.tar.gz"
+      sha256 "50d602be715ae30993a04608f98263ab5eef72a00493fdf415f6b064411778c5"
       def install
         bin.install "shannon"
       end
