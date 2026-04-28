@@ -5,23 +5,23 @@
 class Shannon < Formula
   desc "Advanced search and analysis tool for Claude conversation exports"
   homepage "https://github.com/neilberkman/shannon"
-  version "0.2.15"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/neilberkman/shannon/releases/download/v0.2.15/shannon_0.2.15_darwin_amd64.tar.gz"
-      sha256 "e5dd6c433c218e2b362722c329e0c3813dc538c362e9ec04def945548d16eb51"
+      url "https://github.com/neilberkman/shannon/releases/download/v0.3.0/shannon_0.3.0_darwin_amd64.tar.gz"
+      sha256 "33975d763639b9fe1eb85541b4d6f588d9d6b50997009084c6004a261dffe341"
 
-      def install
+      define_method(:install) do
         bin.install "shannon"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/neilberkman/shannon/releases/download/v0.2.15/shannon_0.2.15_darwin_arm64.tar.gz"
-      sha256 "fa8d679f52e0cb8b0ef7e287787e942602e7481f9e0de8371531f815a14c60f0"
+      url "https://github.com/neilberkman/shannon/releases/download/v0.3.0/shannon_0.3.0_darwin_arm64.tar.gz"
+      sha256 "4d191d9a45d72ac8330fb254a7e47caef6887cecc2d62822b68cbd7c429a9413"
 
-      def install
+      define_method(:install) do
         bin.install "shannon"
       end
     end
@@ -29,16 +29,16 @@ class Shannon < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/neilberkman/shannon/releases/download/v0.2.15/shannon_0.2.15_linux_amd64.tar.gz"
-      sha256 "b03ea540578b9a21d6ece9180765afe5699bfb497f40141b750bfbabb6d81666"
-      def install
+      url "https://github.com/neilberkman/shannon/releases/download/v0.3.0/shannon_0.3.0_linux_amd64.tar.gz"
+      sha256 "a9143305a6167e6c13da7eacdb92838073c7c2f3fd411750ff2ae00381c3515b"
+      define_method(:install) do
         bin.install "shannon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/neilberkman/shannon/releases/download/v0.2.15/shannon_0.2.15_linux_arm64.tar.gz"
-      sha256 "d9b9019757d4d0497caa85e41d011b04bd68da50eec3b5d43dc99db4c7ae5655"
-      def install
+      url "https://github.com/neilberkman/shannon/releases/download/v0.3.0/shannon_0.3.0_linux_arm64.tar.gz"
+      sha256 "cc25c25947826275e6ef6b136be4524c74fa2501dd76e639938165bb0bae4097"
+      define_method(:install) do
         bin.install "shannon"
       end
     end
